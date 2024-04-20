@@ -2,22 +2,34 @@ import React from 'react'
 
 import '../components/moviecontent.css'
 import titleImg from '../../src/images/transformer-title.png';
+import Button from './Button.jsx';
 
-function MovieContent() {
+
+function MovieContent({ movie }) {
     return (
-        <div className="content active">
+        <div className={`content ${movie.active ? 'active' : ''}`}>
+
             <img src={titleImg} alt="Movie Title" className='movie-title' />
             <h4>
-                <span>Year</span>
+                <span>{movie.year}</span>
                 <span>
-                    <i>age</i>
+                    <i>{movie.ageLimit}</i>
                 </span>
-                <span>length</span>
-                <span>category</span>
+                <span>{movie.length}</span>
+                <span>{movie.category}</span>
             </h4>
-            <p>ádasdasdasdasd</p>
+            <p>{movie.description}</p>
             <div className="button">
-                Button
+                <Button
+                    icon={<ion-icon name="bookmark-outline"></ion-icon>}
+                    name="Book"
+                    color="#ff3700"
+                    bgColor="#ffffff"
+                />
+                <Button
+                    icon={<ion-icon name="add-outline"></ion-icon>}
+                    name="My list"
+                />
             </div>
         </div>
     )

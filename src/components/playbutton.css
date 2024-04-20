@@ -1,4 +1,4 @@
-.banner .trailer{
+.banner .trailer {
     position: relative;
     visibility: hidden;
     opacity: 0;
@@ -6,7 +6,7 @@
     z-index: 1000;
 }
 
-.banner .trailer.active{
+.banner .trailer.active {
     visibility: visible;
     opacity: 1;
     transform: scale(1);
@@ -19,7 +19,7 @@
     margin-bottom: 0;
 }
 
-.banner .playBtn{
+.banner .playBtn {
     position: relative;
     color: #ffff;
     width: 80px;
@@ -29,15 +29,60 @@
     background: transparent;
     backdrop-filter: blur(20px);
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer !important;
+    /* animation: button 1s linear infinite; */
+}
+
+.banner .playBtn ion-icon {
+    font-size: 4rem;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.banner .playBtn::before {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    content: '';
+    background: transparent;
+    border: 10px solid #ffff;
+    border-radius: 50%;
     animation: button 1s linear infinite;
 }
 
+.banner .trailer {
+    margin-top: 20px;
+}
+
+.banner .trailer a {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+}
+
+.banner .trailer a ion-icon {
+    font-size: 36px;
+}
+
+.banner .trailer p {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
 @keyframes button {
+
     0%,
     100% {
         opacity: 0.3;
         filter: blur(4px);
     }
+
     50% {
         opacity: 1;
         filter: blur(10px);
