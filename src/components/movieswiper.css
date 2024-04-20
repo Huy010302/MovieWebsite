@@ -5,10 +5,10 @@
 
 .movieSwiper {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50);
-    width: 60vw;
+    width: 40vw;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 40px rbga(255, 255, 255, 0.5);
