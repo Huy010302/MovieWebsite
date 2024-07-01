@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './card.css'
+import '../css/card.css'
 function Card({ movie }) {
     return (
         <div className="col-lg-2 col-md-4 col-sm-6">

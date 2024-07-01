@@ -76,12 +76,10 @@ function Schedule() {
     setMovies(data.filter(movie => movie.category === category));
   }
   return (
-    <section id="sechedule" className='schedule'>
+    <section id="schedule" className='schedule'>
       <div className="container-fluid">
         <div className="row">
-          <div className="section-title">
-            Opening this week
-          </div>
+          <h4 className="section-title">Opening this week</h4>
         </div>
         <div className="row">
           <ul className="filters">

@@ -1,13 +1,13 @@
 const navListData = [
     {
         _id: 1,
-        link: "#",
+        link: "",
         name: "home",
         active: "true"
     },
     {
         _id: 2,
-        link: "#schedule",
+        link: "Schedule.jsx",
         name: "schedule",
         active: "false"
     },

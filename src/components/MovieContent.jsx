@@ -1,7 +1,6 @@
 import React from 'react'
 
-import '../components/moviecontent.css'
-import titleImg from '../../src/images/transformer-title.png';
+import '../css/moviecontent.css'
 import Button from './Button.jsx';
 
 
@@ -9,7 +8,7 @@ function MovieContent({ movie }) {
     return (
         <div className={`content ${movie.active ? 'active' : ''}`}>
 
-            <img src={titleImg} alt="Movie Title" className='movie-title' />
+            <img src={movie.titleImg} alt="Movie Title" className='movie-title' />
             <h4>
                 <span>{movie.year}</span>
                 <span>

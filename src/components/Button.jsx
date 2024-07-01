@@ -1,5 +1,5 @@
 import React from 'react'
-import './button.css'
+import '../css/button.css'
 function Button({ icon, name, bgColor = '#ff3700', color = '#ffffff' }) {
     return (
         <a

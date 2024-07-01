@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../components/playbutton.css';
+import '../css/playbutton.css';
 import Modal from './Modal';
 
 function PlayButton({ movie}) {

@@ -1,10 +1,10 @@
 import React from 'react'
-import '../components/navListItem.css'
+import '../css/navListItem.css'
 
 function NavListItem({nav}) {
     return (
         <li>
-            <a href='#'>{nav.name}</a>
+            <a href={nav.link}>{nav.name}</a>
         </li>
     )
 }

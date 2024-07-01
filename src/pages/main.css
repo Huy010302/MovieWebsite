@@ -42,7 +42,7 @@ section .section-title {
     font-weight: 500;
     font-size: 1.6rem;
     letter-spacing: 1px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
 
@@ -50,7 +50,7 @@ section .section-title::after {
     position: absolute;
     content: '';
     left: 0;
-    bottom: 30px;
+    bottom: -10px;
     height: 5px;
     width: 50%;
     background: linear-gradient(
